@@ -31,13 +31,13 @@ get_header(); // Loads the header.php template. ?>
 
 							<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
 
-							<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-published] [entry-author]', 'origin' ) . '</div>' ); ?>
+							<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-published] [entry-author]', 'origin-c3s' ) . '</div>' ); ?>
 
 							<div class="entry-summary">
 								
 								<?php the_excerpt(); ?>
 								
-								<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin' ), 'after' => '</p>' ) ); ?>
+								<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin-c3s' ), 'after' => '</p>' ) ); ?>
 								
 							</div><!-- .entry-summary -->
 

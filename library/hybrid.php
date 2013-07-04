@@ -176,7 +176,8 @@ class Hybrid {
 		$hybrid->textdomain_loaded['hybrid-core'] = hybrid_load_framework_textdomain( 'hybrid-core' );
 
 		/* Load theme textdomain. */
-		$hybrid->textdomain_loaded[$parent_textdomain] = load_theme_textdomain( $parent_textdomain );
+		
+		$hybrid->textdomain_loaded[$parent_textdomain] = load_theme_textdomain( $parent_textdomain, get_template_directory() . '/languages');
 
 		/* Load child theme textdomain. */
 		$hybrid->textdomain_loaded[$child_textdomain] = is_child_theme() ? load_child_theme_textdomain( $child_textdomain ) : false;

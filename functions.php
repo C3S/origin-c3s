@@ -193,8 +193,8 @@ function origin_scripts() {
  */
 function origin_pagination_args( $args ) {
 	
-	$args['prev_text'] = __( '&larr; Previous', 'origin' );
-	$args['next_text'] = __( 'Next &rarr;', 'origin' );
+	$args['prev_text'] = __( '&larr; Previous', 'origin-c3s' );
+	$args['next_text'] = __( 'Next &rarr;', 'origin-c3s' );
 
 	return $args;
 }
@@ -239,29 +239,29 @@ function origin_commentform_args( $args ) {
 	$commenter = wp_get_current_commenter();
 
 	/* Create the required <span> and <input> element class. */
-	$req = ( ( get_option( 'require_name_email' ) ) ? ' <span class="required">' . __( '*', 'origin' ) . '</span> ' : '' );
+	$req = ( ( get_option( 'require_name_email' ) ) ? ' <span class="required">' . __( '*', 'origin-c3s' ) . '</span> ' : '' );
 	$input_class = ( ( get_option( 'require_name_email' ) ) ? ' req' : '' );
 	
 	
 	$fields = array(
-		'author' => '<p class="form-author' . $input_class . '"><input type="text" class="text-input" name="author" id="author" value="' . esc_attr( $commenter['comment_author'] ) . '" size="40" /><label for="author">' . __( 'Name', 'origin' ) . $req . '</label></p>',
-		'email' => '<p class="form-email' . $input_class . '"><input type="text" class="text-input" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="40" /><label for="email">' . __( 'Email', 'origin' ) . $req . '</label></p>',
-		'url' => '<p class="form-url"><input type="text" class="text-input" name="url" id="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="40" /><label for="url">' . __( 'Website', 'origin' ) . '</label></p>'
+		'author' => '<p class="form-author' . $input_class . '"><input type="text" class="text-input" name="author" id="author" value="' . esc_attr( $commenter['comment_author'] ) . '" size="40" /><label for="author">' . __( 'Name', 'origin-c3s' ) . $req . '</label></p>',
+		'email' => '<p class="form-email' . $input_class . '"><input type="text" class="text-input" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="40" /><label for="email">' . __( 'Email', 'origin-c3s' ) . $req . '</label></p>',
+		'url' => '<p class="form-url"><input type="text" class="text-input" name="url" id="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="40" /><label for="url">' . __( 'Website', 'origin-c3s' ) . '</label></p>'
 	);
 	
 	$args = array(
 		'fields' => apply_filters( 'comment_form_default_fields', $fields ),
-		'comment_field' => '<p class="form-textarea req"><!--<label for="comment">' . __( 'Comment', 'origin' ) . '</label>--><textarea name="comment" id="comment" cols="60" rows="10"></textarea></p>',
-		'must_log_in' => '<p class="alert">' . sprintf( __( 'You must be <a href="%1$s" title="Log in">logged in</a> to post a comment.', 'origin' ), wp_login_url( get_permalink() ) ) . '</p><!-- .alert -->',
-		'logged_in_as' => '<p class="log-in-out">' . sprintf( __( 'Logged in as <a href="%1$s" title="%2$s">%2$s</a>.', 'origin' ), admin_url( 'profile.php' ), esc_attr( $user_identity ) ) . ' <a href="' . wp_logout_url( get_permalink() ) . '" title="' . esc_attr__( 'Log out of this account', 'origin' ) . '">' . __( 'Log out &rarr;', 'origin' ) . '</a></p><!-- .log-in-out -->',
+		'comment_field' => '<p class="form-textarea req"><!--<label for="comment">' . __( 'Comment', 'origin-c3s' ) . '</label>--><textarea name="comment" id="comment" cols="60" rows="10"></textarea></p>',
+		'must_log_in' => '<p class="alert">' . sprintf( __( 'You must be <a href="%1$s" title="Log in">logged in</a> to post a comment.', 'origin-c3s' ), wp_login_url( get_permalink() ) ) . '</p><!-- .alert -->',
+		'logged_in_as' => '<p class="log-in-out">' . sprintf( __( 'Logged in as <a href="%1$s" title="%2$s">%2$s</a>.', 'origin-c3s' ), admin_url( 'profile.php' ), esc_attr( $user_identity ) ) . ' <a href="' . wp_logout_url( get_permalink() ) . '" title="' . esc_attr__( 'Log out of this account', 'origin-c3s' ) . '">' . __( 'Log out &rarr;', 'origin-c3s' ) . '</a></p><!-- .log-in-out -->',
 		'comment_notes_before' => '',
 		'comment_notes_after' => '',
 		'id_form' => 'commentform',
 		'id_submit' => 'submit',
-		'title_reply' => __( 'Leave a Reply', 'origin' ),
-		'title_reply_to' => __( 'Leave a Reply to %s', 'origin' ),
-		'cancel_reply_link' => __( 'Click here to cancel reply.', 'origin' ),
-		'label_submit' => __( 'Post Comment &rarr;', 'origin' ),
+		'title_reply' => __( 'Leave a Reply', 'origin-c3s' ),
+		'title_reply_to' => __( 'Leave a Reply to %s', 'origin-c3s' ),
+		'cancel_reply_link' => __( 'Click here to cancel reply.', 'origin-c3s' ),
+		'label_submit' => __( 'Post Comment &rarr;', 'origin-c3s' ),
 	);
 	
 	return $args;
@@ -286,7 +286,7 @@ function origin_breadcrumb_trail_args( $args ) {
  */
 function origin_default_footer_settings( $settings ) {
     
-    $settings['footer_insert'] = '<p class="copyright">' . __( 'Copyright &#169; [the-year] [site-link]', 'origin' ) . '</p>' . "\n\n" . '<p class="credit">' . __( 'Powered by [wp-link] and [theme-link]', 'origin' ) . '</p>';
+    $settings['footer_insert'] = '<p class="copyright">' . __( 'Copyright &#169; [the-year] [site-link]', 'origin-c3s' ) . '</p>' . "\n\n" . '<p class="credit">' . __( 'Powered by [wp-link] and [theme-link]', 'origin-c3s' ) . '</p>';
     
     return $settings;
 }

@@ -32,7 +32,7 @@ get_header(); // Loads the header.php template. ?>
 
 						<div class="entry-content">
 							
-							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'origin' ) ); ?>
+							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'origin-c3s' ) ); ?>
 
 							<?php $args = array(
 								'title_li' => false,
@@ -48,7 +48,7 @@ get_header(); // Loads the header.php template. ?>
 							); ?>
 							<?php wp_list_bookmarks( $args ); ?>
 
-							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin' ), 'after' => '</p>' ) ); ?>
+							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin-c3s' ), 'after' => '</p>' ) ); ?>
 							
 						</div><!-- .entry-content -->
 

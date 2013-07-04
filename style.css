@@ -2,7 +2,7 @@
  * Theme Name: Origin C3S
  * Theme URI: http://alienwp.com/themes/origin/
  * Description: The Origin Theme, sligthly modified by FC Stofel (stoffel@undderganzerest.de) for the C3S-Blog. 
- * Version: 0.6
+ * Version: 0.6.3
  * Author: AlienWP
  * Author URI: http://alienwp.com
  * Tags: flexible-width, theme-options, threaded-comments, microformats, translation-ready, rtl-language-support, one-column, two-columns, right-sidebar, sticky-post, custom-background, featured-images
@@ -562,6 +562,7 @@ a:hover img { opacity: 0.85; }
 	width: 100%;
 	margin: 1.2em 0 0 0;
 	float: left;
+	text-align: center;
 	position: relative;
 	z-index: 99;
 	background: url("images/nav_bg.gif") repeat-x scroll left bottom transparent;
@@ -571,8 +572,8 @@ a:hover img { opacity: 0.85; }
 	margin-bottom: 15px;
 }
 
-#menu-primary .menu { float: left; }
-#menu-primary .menu ul { float: left; }
+#menu-primary .menu { float: none; }
+#menu-primary .menu ul { float: none;}
 #menu-primary li {
 	display: block;
 	float: left;
@@ -580,7 +581,7 @@ a:hover img { opacity: 0.85; }
 }
 #menu-primary li a {
 	line-height: 1em;
-	margin-right: 3.5em;
+	margin-right: 2em;
 	display: block;
 	text-transform: uppercase;
 	font-size: 1em;
@@ -590,6 +591,7 @@ a:hover img { opacity: 0.85; }
 	clear: both;
 	float: none;
 	border-top: 1px dotted #e5e5e5;
+	text-align:left;
 }
 #menu-primary li li:first-child, #menu-primary li li.current-menu-item li:first-child { border-top: none; }
 #menu-primary li li a, #menu-primary li li.current-menu-item li a {
@@ -621,7 +623,7 @@ a:hover img { opacity: 0.85; }
 	display: none;
 	position: absolute;
 	top: 25px;
-	left: 19px;
+	left: 0px;
 	border: 1px solid #e3e3e3;
 	background: #fff;
 	-webkit-box-shadow: 0 0 7px rgba(0,0,0,.09);
@@ -659,7 +661,7 @@ a:hover img { opacity: 0.85; }
 
 /* Responsive menu
 -------------------------------------------------------------- */
-.site-navigation .nav-menu { display: block; }
+.site-navigation .nav-menu { display: none; }
 .site-navigation .nav-menu.toggled-on { display: block; }
 .menu-toggle {
 	clear: both;
@@ -1140,13 +1142,10 @@ a:hover img { opacity: 0.85; }
 
 /* Menu toggles */
 @media only screen and (min-width: 768px) { 
-	.site-navigation .nav-menu { display: block; } 
+	.site-navigation .nav-menu { display: inline-block; }
 }
 
 @media only screen and (max-width: 767px) { 
-
-	.site-navigation .nav-menu { display: none; } 
-	
 	.menu-toggle { 
 		display: block;
 	} 
@@ -1188,6 +1187,7 @@ a:hover img { opacity: 0.85; }
 	.menu-toggle { display: block; }
 	#menu-primary {
 		float: left;
+		text-align: left;
 		clear: both;
 		width: 100%;
 		margin-top: 10px;

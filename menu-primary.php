@@ -14,7 +14,7 @@ if ( has_nav_menu( 'primary' ) ) : ?>
 
 	<div id="menu-primary" class="site-navigation menu-container" role="navigation">
 
-		<span class="menu-toggle"><?php _e( 'Menu', 'origin' ); ?></span>
+		<span class="menu-toggle"><?php _e( 'Menu', 'origin-c3s' ); ?></span>
 
 		<?php do_atomic( 'open_menu_primary' ); // origin_open_menu_primary ?>
 

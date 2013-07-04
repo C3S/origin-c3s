@@ -29,7 +29,7 @@
 				
 				<?php if ( '0' == $comment->comment_approved ) : ?>
 				
-					<?php echo apply_atomic_shortcode( 'comment_moderation', '<p class="alert moderation">' . __( 'Your comment is awaiting moderation.', 'origin' ) . '</p>' ); ?>
+					<?php echo apply_atomic_shortcode( 'comment_moderation', '<p class="alert moderation">' . __( 'Your comment is awaiting moderation.', 'origin-c3s' ) . '</p>' ); ?>
 					
 				<?php endif; ?>
 

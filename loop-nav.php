@@ -13,19 +13,19 @@
 	<?php if ( is_attachment() ) : ?>
 
 		<div class="loop-nav">
-			<?php previous_post_link( '%link', '<span class="previous">' . __( '&larr; Return to entry', 'origin' ) . '</span>' ); ?>
+			<?php previous_post_link( '%link', '<span class="previous">' . __( '&larr; Return to entry', 'origin-c3s' ) . '</span>' ); ?>
 		</div><!-- .loop-nav -->
 
 	<?php elseif ( is_singular( 'post' ) ) : ?>
 
 		<div class="loop-nav">
-			<?php previous_post_link( '<div class="previous">' . __( '&larr; %link', 'origin' ) . '</div>', '%title' ); ?>
-			<?php next_post_link( '<div class="next">' . __( '%link', 'origin' ) . ' &rarr;</div>', '%title' ); ?>
+			<?php previous_post_link( '<div class="previous">' . __( '&larr; %link', 'origin-c3s' ) . '</div>', '%title' ); ?>
+			<?php next_post_link( '<div class="next">' . __( '%link', 'origin-c3s' ) . ' &rarr;</div>', '%title' ); ?>
 		</div><!-- .loop-nav -->
 
 	<?php elseif ( !is_singular() && current_theme_supports( 'loop-pagination' ) ) : loop_pagination(); ?>
 
-	<?php elseif ( !is_singular() && $nav = get_posts_nav_link( array( 'sep' => '', 'prelabel' => '<span class="previous">' . __( '&larr; Previous', 'origin' ) . '</span>', 'nxtlabel' => '<span class="next">' . __( 'Next &rarr;', 'origin' ) . '</span>' ) ) ) : ?>
+	<?php elseif ( !is_singular() && $nav = get_posts_nav_link( array( 'sep' => '', 'prelabel' => '<span class="previous">' . __( '&larr; Previous', 'origin-c3s' ) . '</span>', 'nxtlabel' => '<span class="next">' . __( 'Next &rarr;', 'origin-c3s' ) . '</span>' ) ) ) : ?>
 
 		<div class="loop-nav">
 			<?php echo $nav; ?>

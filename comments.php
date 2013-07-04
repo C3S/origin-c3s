@@ -22,7 +22,7 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 
 			<?php if ( have_comments() ) : ?>
 
-				<h3 id="comments-number" class="comments-header block-title"><span><?php comments_number( __( 'No Responses', 'origin' ), __( 'One Response', 'origin' ), __( '% Responses', 'origin' ) ); ?></span></h3>
+				<h3 id="comments-number" class="comments-header block-title"><span><?php comments_number( __( 'No Responses', 'origin-c3s' ), __( 'One Response', 'origin-c3s' ), __( '% Responses', 'origin-c3s' ) ); ?></span></h3>
 
 				<?php do_atomic( 'before_comment_list' );// origin_before_comment_list ?>
 
@@ -43,13 +43,13 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 			<?php if ( pings_open() && !comments_open() ) : ?>
 
 				<p class="comments-closed pings-open">
-					<?php printf( __( 'Comments are closed, but <a href="%1$s" title="Trackback URL for this post">trackbacks</a> and pingbacks are open.', 'origin' ), get_trackback_url() ); ?>
+					<?php printf( __( 'Comments are closed, but <a href="%1$s" title="Trackback URL for this post">trackbacks</a> and pingbacks are open.', 'origin-c3s' ), get_trackback_url() ); ?>
 				</p><!-- .comments-closed .pings-open -->
 
 			<?php elseif ( !comments_open() ) : ?>
 
 				<p class="comments-closed">
-					<?php _e( 'Comments are closed.', 'origin' ); ?>
+					<?php _e( 'Comments are closed.', 'origin-c3s' ); ?>
 				</p><!-- .comments-closed -->
 
 			<?php endif; ?>

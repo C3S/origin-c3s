@@ -32,17 +32,17 @@ get_header(); // Loads the header.php template. ?>
 
 						<div class="entry-content">
 							
-							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'origin' ) ); ?>
+							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'origin-c3s' ) ); ?>
 
-							<h2><?php _e( 'Archives by category', 'origin' ); ?></h2>
+							<h2><?php _e( 'Archives by category', 'origin-c3s' ); ?></h2>
 
 							<ul class="xoxo category-archives">
 								
-								<?php wp_list_categories( array( 'feed' => __( 'RSS', 'origin' ), 'show_count' => true, 'use_desc_for_title' => false, 'title_li' => false ) ); ?>
+								<?php wp_list_categories( array( 'feed' => __( 'RSS', 'origin-c3s' ), 'show_count' => true, 'use_desc_for_title' => false, 'title_li' => false ) ); ?>
 								
 							</ul><!-- .xoxo .category-archives -->
 
-							<h2><?php _e( 'Archives by month', 'origin' ); ?></h2>
+							<h2><?php _e( 'Archives by month', 'origin-c3s' ); ?></h2>
 
 							<ul class="xoxo monthly-archives">
 								
@@ -50,7 +50,7 @@ get_header(); // Loads the header.php template. ?>
 								
 							</ul><!-- .xoxo .monthly-archives -->
 
-							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin' ), 'after' => '</p>' ) ); ?>
+							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin-c3s' ), 'after' => '</p>' ) ); ?>
 							
 						</div><!-- .entry-content -->
 

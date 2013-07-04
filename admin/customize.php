@@ -27,13 +27,13 @@ function origin_customize_register( $wp_customize ) {
 
 	/* Section: Typography */
 	$wp_customize->add_section( 'origin_typography' , array(
-		'title'      => __( 'Typography', 'origin' ),
+		'title'      => __( 'Typography', 'origin-c3s' ),
 		'priority'   => 30,
 	) );
 
 	/* Section: Custom CSS */
 	$wp_customize->add_section( 'origin_custom_css' , array(
-		'title'      => __( 'Custom CSS', 'origin' ),
+		'title'      => __( 'Custom CSS', 'origin-c3s' ),
 		'priority'   => 250,
 	) );		
 
@@ -73,7 +73,7 @@ function origin_customize_register( $wp_customize ) {
 
 	/* Control: Font Family */
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'origin_font_family', array(
-		'label'     => __( 'Font Family', 'origin' ),
+		'label'     => __( 'Font Family', 'origin-c3s' ),
 		'section'   => 'origin_typography',
 		'settings'  => 'origin_font_family',
 		'type'		=> 'select',
@@ -93,7 +93,7 @@ function origin_customize_register( $wp_customize ) {
 
 	/* Control: Font Size */
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'origin_font_size', array(
-		'label'     => __( 'Font Size', 'origin' ),
+		'label'     => __( 'Font Size', 'origin-c3s' ),
 		'section'   => 'origin_typography',
 		'settings'  => 'origin_font_size',
 		'type'		=> 'select',
@@ -111,7 +111,7 @@ function origin_customize_register( $wp_customize ) {
 
 	/* Control: Link Color */
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'origin-link-color', array(
-		'label'     => __( 'Link Color', 'origin' ),
+		'label'     => __( 'Link Color', 'origin-c3s' ),
 		'section'   => 'colors',
 		'settings'  => 'origin_link_color',
 		'priority'  => 1
@@ -119,7 +119,7 @@ function origin_customize_register( $wp_customize ) {
 
 	/* Control: Custom CSS */
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'origin-custom-css', array(
-		'label'     => __( 'Custom CSS', 'origin' ),
+		'label'     => __( 'Custom CSS', 'origin-c3s' ),
 		'section'   => 'origin_custom_css',
 		'settings'  => 'origin_custom_css',
 		'priority'  => 1
@@ -129,7 +129,7 @@ function origin_customize_register( $wp_customize ) {
 		added by FC Stoffel */
 		
 	$wp_customize->add_section( 'fcs_meinung', array(
-		'title'          => 'Gravatar Icon (Meinung)',
+		'title'          => __('Gravatar Icon (Opinion)', 'origin-c3s'),
 		'priority'       => 35, 
 	) );	
 	
@@ -151,7 +151,7 @@ function origin_customize_register( $wp_customize ) {
 	}	  
 	
 	$wp_customize->add_control( 'fcs_gravatar-category_ctrl', array(
-    'label'      => 'Show Gravatar Icon for',
+    'label'      => __('Show Gravatar Icon for', 'origin-c3s'),
     'section'    => 'fcs_meinung',
     'settings'   => 'fcs_gravatar-category',
     'type'       => 'select',

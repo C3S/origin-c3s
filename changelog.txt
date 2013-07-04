@@ -1,5 +1,14 @@
 == Changelog ==
 
+= 0.6.3 =
+* Modified by FC Stoffel for C3S
+* Localization for German (added some Translations in .mo Files)
+* Added Path in "hybrid.php" Line 180 load_theme_textdomain()
+
+= 0.6.2 =
+* Modified by FC Stoffel for C3S
+* Menu now works in IE8
+
 = 0.6.1 =
 * Modified by FC Stoffel for C3S
 * Added "Gravatar Icon (Meinung))" Section in the Theme Customizer

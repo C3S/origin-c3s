@@ -49,7 +49,7 @@ get_header(); // Loads the header.php template. ?>
 									
 								<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
 
-								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-published] &middot; by [entry-author] &middot; in [entry-terms taxonomy="category" before=""] [entry-edit-link before=" &middot; "]', 'origin' ) . '</div>' ); ?>
+								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-published] &middot; by [entry-author] &middot; in [entry-terms taxonomy="category" before=""] [entry-edit-link before=" &middot; "]', 'origin-c3s' ) . '</div>' ); ?>
 										
 							</div><!-- .sticky-header -->
 	
@@ -57,7 +57,7 @@ get_header(); // Loads the header.php template. ?>
 								
 								<?php the_excerpt(); ?>
 								
-								<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin' ), 'after' => '</p>' ) ); ?>
+								<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin-c3s' ), 'after' => '</p>' ) ); ?>
 									
 							</div><!-- .entry-summary -->
 

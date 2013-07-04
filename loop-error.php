@@ -12,7 +12,7 @@
 
 		<div class="entry-content">
 
-			<p><?php _e( 'Apologies, but no entries were found.', 'origin' ); ?></p>
+			<p><?php _e( 'Apologies, but no entries were found.', 'origin-c3s' ); ?></p>
 
 		</div><!-- .entry-content -->
 
