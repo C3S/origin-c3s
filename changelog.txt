@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 0.6.4 =
+* Modified by FC Stoffel for C3S
+* Fixed Author-Link Bug
+
 = 0.6.3 =
 * Modified by FC Stoffel for C3S
 * Localization for German (added some Translations in .mo Files)
