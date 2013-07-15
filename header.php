@@ -19,10 +19,7 @@
 <!-- Mobile viewport optimized -->
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<?php if ( hybrid_get_setting( 'origin_favicon_url' ) ) : ?>
-<!-- Favicon -->
-	<link rel="shortcut icon" href="<?php echo hybrid_get_setting( 'origin_favicon_url' ); ?>" />
-<?php endif; ?>
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png" />
 
 <!-- Title -->
 <title><?php hybrid_document_title(); ?></title>

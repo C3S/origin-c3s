@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 0.6.5 =
+* Modified by FC Stoffel for C3S
+* Added favicon.png (header.php and icon in folder "images")
+
 = 0.6.4 =
 * Modified by FC Stoffel for C3S
 * Fixed Author-Link Bug
